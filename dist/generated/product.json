@@ -1,0 +1,51 @@
+{
+  "name": "Board Lite",
+  "slug": "board-lite",
+  "description": "A small independent task-board implementation generated from explicit behavior.",
+  "pages": [
+    {
+      "path": "/",
+      "title": "Board",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Independent generated product"
+        },
+        {
+          "type": "link",
+          "text": "Open About",
+          "target": "/about"
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "title": "About",
+      "blocks": [
+        {
+          "type": "text",
+          "text": "Generated from a behavioral blueprint, not an upstream source tree."
+        },
+        {
+          "type": "link",
+          "text": "Back",
+          "target": "/"
+        }
+      ]
+    }
+  ],
+  "endpoints": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "response": {
+        "ok": true,
+        "product": "board-lite"
+      }
+    }
+  ],
+  "state": {
+    "cards": []
+  }
+}
